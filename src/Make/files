@@ -1,0 +1,3 @@
+finiteVolume/fields/fvPatchFields/derived/turbulentMixingLengthOmegaInlet/turbulentMixingLengthOmegaInletFvPatchScalarField.C
+
+LIB = $(FOAM_USER_LIBBIN)/libironBinturong
