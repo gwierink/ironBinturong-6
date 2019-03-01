@@ -1,5 +1,5 @@
 # Content
-`libironBinturong-6` currently contains:
+`toolShed-6` currently contains:
 
 ## 1. Dissipation rate inlet BC for omega
 OpenFOAM provides the turbulentMixingLengthDissipationRateInlet boundary
@@ -9,7 +9,7 @@ is set up to calculate dissipation rate _epsilon_ for the kEpsilon turbulence
 model. The `turbulentMixingLengthOmegaInlet` does the same, but for the
 kOmega(SST) turbulence model.
 
-- Source code: `src/finiteVolume/fields/fvPatchFields/derived/turbulentMixingLengthOmegaInlet`
+- Source code: `src/fvPatchFields/turbulentMixingLengthOmegaInlet`
 - Example: `tutorials/incompressible/simpleFoam/pitzDaily`
 
 

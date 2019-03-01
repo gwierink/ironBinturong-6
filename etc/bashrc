@@ -1,0 +1,54 @@
+#----------------------------------*-sh-*--------------------------------------
+# =========                 |
+# \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+#  \\    /   O peration     | Website:  https://openfoam.org
+#   \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+#    \\/     M anipulation  |
+#------------------------------------------------------------------------------
+# License
+#     This file is part of OpenFOAM.
+#
+#     OpenFOAM is free software: you can redistribute it and/or modify it
+#     under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+#     ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+#     FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+#     for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+# File
+#     etc/bashrc
+#
+# Description
+#     Startup file for some handy OpenFOAM stuff.
+#     Sourced from ~/.profile or ~/.bashrc
+#     Should be usable by any POSIX-compliant shell (eg, ksh)
+#
+#------------------------------------------------------------------------------
+
+export WM_TS_PROJECT=toolShed
+
+export WM_TS_PROJECT_NAME=$WM_TS_PROJECT-$WM_PROJECT_VERSION
+
+export WM_TS_INST_DIR=$HOME/$WM_PROJECT/$WM_PROJECT_NAME
+
+export WM_TS_PROJECT_DIR=$WM_TS_INST_DIR$WM_TS_PROJECT_NAME
+
+export WM_TS_TUT_DIR=$WM_TS_PROJECT_DIR/tutorials
+export WM_TS_SRC_DIR=$WM_TS_PROJECT_DIR/src
+export WM_TS_ETC_DIR=$WM_TS_PROJECT_DIR/etc
+export WM_TS_APP_DIR=$WM_TS_PROJECT_DIR/applications
+export WM_TS_SOL_DIR=$WM_TS_APP_DIR/solvers
+export WM_TS_UTIL_DIR=$WM_TS_APP_DIR/utilities
+
+# Source project setup files
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+source $WM_TS_PROJECT_DIR/etc/config.sh/aliases
+
+
+#------------------------------------------------------------------------------
